@@ -1,0 +1,19 @@
+2.Find last digit in a number
+program to return the last digit of the number.
+
+
+
+
+
+import java.util.*;
+class last{
+  public static void main(String[] args){
+  Scanner sc=new Scanner(System.in);
+  int n=sc.nextInt();
+  int l=n%10;
+  if(l<0){
+    l=l/-1;
+  }
+  System.out.println(l);
+  }
+}
