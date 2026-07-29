@@ -1,0 +1,24 @@
+Count Digits that Divide
+
+
+
+
+
+class Sol{
+  static int evenlyDivides(int n){
+  int num=n;
+  int c=0;
+  int div;
+  while(n!=0){
+    div=n%10;
+    n/=10;
+    if(div==0){
+        continue;
+    }
+    if(num%div==0){
+        c++;
+    }
+  }
+  return c;
+  }
+}
