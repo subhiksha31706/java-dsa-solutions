@@ -3,7 +3,6 @@ Count Digits that Divide
 
 
 
-
 class Sol{
   static int evenlyDivides(int n){
   int num=n;
