@@ -1,0 +1,21 @@
+Raise to Power of Its Own Reverse
+
+
+
+class Solution {
+    public int pow(int x,int n) {
+        if (n == 0) return 1;
+        int temp = pow(x,n/2);
+        if(n%2 == 0) {
+            return temp*temp;
+        }else{
+            return x*temp*temp;
+        }
+        
+    }
+    public int reverseExponentiation(int n) {
+        // code here
+        if (n ==10) return 10;
+        return pow(n,n);
+    }
+}
